@@ -1,81 +1,98 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Buy Tickets</title>
-    <link rel="stylesheet" type="text/css" href="style1.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="style1.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1 style="text-align: center;">Cinema</h1>
+      <h1 style="text-align: center">Cinema</h1>
     </header>
     <main>
-        <!-- style="display: flex; justify-content: center;" -->
-        <h2>Ticket-buying</h2>
-        <form id="ticket-form" style="text-align: center;">
-            <label for="name">Your full name:</label>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="name">Your address:</label>
-            <input type="text" id="address" name="address"><br><br>
-            <label for="date">Shipping date:</label>
-            <input type="date" id="date" name="date" style="font-size: 1.5em; padding: 3px;"><br><br>
-            <label for="time">Shipping time:</label>
-            <input type="time" id="time" name="time" style="font-size: 20px; padding: 0.1em;"><br><br>
-            <label for="movie">Name movie:</label>
-            <select id="movie" name="movie" style="font-size: 20px; padding: 5px;">
+      <!-- style="display: flex; justify-content: center;" -->
+      <h2>Ticket-buying</h2>
+      <form id="ticket-form" style="text-align: center">
+        <label for="name">Your full name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+        <label for="name">Your address:</label>
+        <input type="text" id="address" name="address" /><br /><br />
+        <label for="date">Shipping date:</label>
+        <input
+          type="date"
+          id="date"
+          name="date"
+          style="font-size: 1.5em; padding: 3px"
+        />
+        <br /><br />
+        <label for="time">Shipping time:</label>
+        <input
+          type="time"
+          id="time"
+          name="time"
+          style="font-size: 20px; padding: 0.1em"
+        /><br /><br />
+        <label for="movie">Name movie:</label>
+        <select id="movie" name="movie" style="font-size: 20px; padding: 5px">
           <option value="movie1">Movie 1</option>
           <option value="movie2">Movie 2</option>
-          <option value="movie3">Movie 3</option>
-        </select><br><br>
-            <label for="time">Slot:</label>
-            <select id="time" name="time" style="width: 40%" style="font-size: 20px; padding: 5px;">
-          <option value="time1">Time 1</option>
-          <option value="time2">Time 2</option>
-          <option value="time3">Time 3</option>
-        </select><br><br>
-            <label for="tickets">Number of Tickets:</label>
-            <input type="number" id="tickets" name="tickets" min="1" style="width: 20%"><br><br>
-            <input type="submit" value="Buy Tickets">
-        </form>
+          <option value="movie3">Movie 3</option></select
+        ><br /><br />
+        <label for="slot">Slot:</label>
+        <span>
+          <label for="slot1">Time 1</label>
+          <input type="radio" id="slot1" name="slot" value="slot1" />
+        </span>
+        <span>
+          <label for="slot2">Time 2</label>
+          <input type="radio" id="slot2" name="slot" value="slot2" />
+        </span>
+        <span>
+          <label for="slot3">Time 3</label>
+          <input type="radio" id="slot3" name="slot" value="slot3" /> </span
+        ><br /><br />
+        <label for="tickets">Number of Tickets:</label>
+        <input
+          type="number"
+          id="tickets"
+          name="tickets"
+          min="1"
+          style="width: 20%"
+        /><br /><br />
+        <input type="submit" value="Buy Tickets" />
+      </form>
     </main>
-    <div style="width:100%;display:flex;justify-content:center">
-        <iframe
-            width="560" height="315" 
-            src="https://www.youtube.com/embed/t-YRlGXQL-M" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"         
-            allowfullscreen>
-        </iframe>
-    </div>
     <table>
-            <tr>
-                <th>Column 1</th>
-                <th>Column 2</th>
-                <th>Column 3</th>
-                <th>Column 4</th>
-            </tr>
-            <tr>
-                <td>Row 1, Cell 1</td>
-                <td>Row 1, Cell 2</td>
-                <td>Row 1, Cell 3</td>
-                <td>Row 1, Cell 4</td>
-            </tr>
-            <tr>
-                <td>Row 2, Cell 1</td>
-                <td>Row 2, Cell 2</td>
-                <td>Row 2, Cell 3</td>
-                <td>Row 2, Cell 4</td>
-            </tr>
-            <!-- Repeat the above <tr> for the remaining rows -->
-            <!-- Add 10 rows in total -->
-        </table>
-    <footer style="text-align: center;">
-        <p>Copyright © Cinema</p>
+      <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+        <th>Column 4</th>
+      </tr>
+      <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+        <td>Row 1, Cell 3</td>
+        <td>Row 1, Cell 4</td>
+      </tr>
+      <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+        <td>Row 2, Cell 3</td>
+        <td>Row 2, Cell 4</td>
+      </tr>
+    </table>
+    <footer style="text-align: center">
+      <p>Copyright © Cinema</p>
     </footer>
     <script src="script1.js"></script>
-</body>
-
+    <iframe
+      width="100%"
+      height="400px"
+      src="https://api.mapbox.com/styles/v1/tuanfighter78/clw309tqu02ia01qv70fuh7g2.html?title=false&access_token=pk.eyJ1IjoidHVhbmZpZ2h0ZXI3OCIsImEiOiJjbHczMDJnMGwwMnE5MmtwZm1taXhqc3V0In0.lv7CBTAIk3y53acGyWxP_w&zoomwheel=false#8.43/10.842/106.712"
+      title="Outdoors"
+      style="border: none"
+    ></iframe>
+  </body>
 </html>
